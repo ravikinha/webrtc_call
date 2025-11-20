@@ -1,0 +1,24 @@
+{
+  "originHash" : "0ff14b3871b5dbd7b152210db5b0a2805b1d41505df75e77ba5ec98afa5e73fc",
+  "pins" : [
+    {
+      "identity" : "specs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/webrtc-sdk/Specs.git",
+      "state" : {
+        "revision" : "e4ff5395ea78dc55f2635859ef42721755839aa5",
+        "version" : "114.5735.10"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "c6bfd1af48efcc9a9ad203665db12375ba6b145a",
+        "version" : "4.0.8"
+      }
+    }
+  ],
+  "version" : 3
+}

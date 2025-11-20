@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B32E3FF2ECF1A75006B819B /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0B32E3FE2ECF1A75006B819B /* Starscream */; };
+		0B32E4022ECF1A91006B819B /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 0B32E4012ECF1A91006B819B /* WebRTC */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		0B32E3DD2ECF0E4F006B819B /* webrtc_call_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webrtc_call_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B32E3FF2ECF1A75006B819B /* Starscream in Frameworks */,
+				0B32E4022ECF1A91006B819B /* WebRTC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = webrtc_call_ios;
 			packageProductDependencies = (
+				0B32E3FE2ECF1A75006B819B /* Starscream */,
+				0B32E4012ECF1A91006B819B /* WebRTC */,
 			);
 			productName = webrtc_call_ios;
 			productReference = 0B32E3DD2ECF0E4F006B819B /* webrtc_call_ios.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = 0B32E3D42ECF0E4F006B819B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0B32E3FD2ECF1A75006B819B /* XCRemoteSwiftPackageReference "Starscream" */,
+				0B32E4002ECF1A91006B819B /* XCRemoteSwiftPackageReference "Specs" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0B32E3DE2ECF0E4F006B819B /* Products */;
 			projectDirPath = "";
@@ -246,10 +259,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAVMQ8VKH2;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera for video calls";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone for video calls";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -288,10 +304,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NAVMQ8VKH2;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera for video calls";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to your microphone for video calls";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -345,6 +364,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B32E3FD2ECF1A75006B819B /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.8;
+			};
+		};
+		0B32E4002ECF1A91006B819B /* XCRemoteSwiftPackageReference "Specs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/webrtc-sdk/Specs.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 114.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B32E3FE2ECF1A75006B819B /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B32E3FD2ECF1A75006B819B /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		0B32E4012ECF1A91006B819B /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B32E4002ECF1A91006B819B /* XCRemoteSwiftPackageReference "Specs" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B32E3D52ECF0E4F006B819B /* Project object */;
 }
